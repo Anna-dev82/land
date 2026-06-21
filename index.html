@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineer Portfolio | AI & Clean Code</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
 </head>
 <body>
     <div class="container">
-        <!-- Блок 1: Главный экран -->
+        <!-- Блок 1: Главный экран (Spline Interactive) -->
         <section class="hero-grid">
-            <div class="hero-content">
-                <span class="section-label">AI & Web Development</span>
-                <h1 style="font-size: clamp(40px, 5vw, 72px); line-height: 1; margin-bottom: 32px;">Разработка сайтов и умных веб-интерфейсов</h1>
-                <p style="color: var(--color-text-dim); font-size: 20px; margin-bottom: 40px; max-width: 90%;">Создаю адаптивные продающие лендинги, которые летают на смартфонах, и независимые самописные сайты. Интегрирую ИИ-агентов без платных сторонних сервисов.</p>
+            <div class="spotlight"></div>
+            
+            <div class="hero-content" style="padding: 60px; z-index: 10;">
+                <span class="section-label" style="color: var(--color-accent);">Interactive 3D Experience</span>
+                <h1 class="text-gradient" style="font-size: clamp(40px, 4vw, 64px); line-height: 1.1; margin-bottom: 24px; font-weight: 800;">
+                    Разработка сайтов <br>и умных интерфейсов
+                </h1>
+                <p style="color: var(--color-text-dim); font-size: 18px; margin-bottom: 40px; max-width: 480px;">
+                    Создаю иммерсивный опыт, который захватывает внимание. От чистого кода до интеграции ИИ-агентов нового поколения.
+                </p>
                 <a href="https://t.me/your_handle" class="btn-pulse">Обсудить проект в Telegram</a>
             </div>
-            <div id="three-container" style="height: 600px;"></div>
+
+            <div class="hero-visual" style="position: relative; height: 100%; width: 100%; min-height: 500px;">
+                <spline-viewer 
+                    url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+                    class="w-full h-full"
+                    style="width: 100%; height: 100%;"
+                ></spline-viewer>
+            </div>
         </section>
 
         <!-- Блок 2: Отрезвление -->
