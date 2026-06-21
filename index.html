@@ -3,78 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineer Portfolio | Clean Code & AI</title>
+    <title>Engineer Portfolio | AI & Clean Code</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-    <header style="padding: 40px 0; position: absolute; width: 100%; z-index: 10;">
-        <div class="container">
-            <div style="font-weight: 900; font-size: 20px; letter-spacing: -1px;">ENGINEER.LOG</div>
-        </div>
-    </header>
-
-    <section class="hero" style="height: 100vh; display: flex; align-items: center; position: relative;">
-        <div id="three-container" style="position: absolute; right: 0; top: 0; width: 50%; height: 100%;"></div>
-        <div class="container">
-            <div style="max-width: 600px; position: relative; z-index: 2;">
+    <div class="container">
+        <!-- Блок 1: Главный экран -->
+        <section class="hero-grid">
+            <div class="hero-content">
                 <span class="section-label">AI & Web Development</span>
-                <h1 style="font-size: 64px; line-height: 1.1; margin-bottom: 24px;">Разработка сайтов и умных веб-интерфейсов</h1>
-                <p class="case-description" style="font-size: 18px;">От конструкторов до чистого кода. Интегрирую ИИ-агентов без ежемесячных подписок.</p>
-                <a href="#" class="btn-neon">Обсудить проект в Telegram</a>
+                <h1 style="font-size: clamp(40px, 5vw, 72px); line-height: 1; margin-bottom: 32px;">Разработка сайтов и умных веб-интерфейсов</h1>
+                <p style="color: var(--color-text-dim); font-size: 20px; margin-bottom: 40px; max-width: 90%;">Создаю адаптивные продающие лендинги, которые летают на смартфонах, и независимые самописные сайты. Интегрирую ИИ-агентов без платных сторонних сервисов.</p>
+                <a href="https://t.me/your_handle" class="btn-pulse">Обсудить проект в Telegram</a>
             </div>
-        </div>
-    </section>
+            <div id="three-container" style="height: 600px;"></div>
+        </section>
 
-    <section class="cases" style="padding: 100px 0;">
-        <div class="container">
-            <h2 style="font-size: 48px; margin-bottom: 80px; text-align: center;">Кейсы, где важен смысл</h2>
+        <!-- Блок 2: Отрезвление -->
+        <section style="padding: 120px 0;">
+            <span class="section-label">Отрезвление</span>
+            <h2 style="font-size: 48px; margin-bottom: 16px;">Почему 90% сайтов в сети работают в минус?</h2>
+            <p style="color: var(--color-text-dim); margin-bottom: 60px;">Бизнес меняется слишком быстро. Шаблонные решения больше не цепляют.</p>
             
-            <!-- Case 1 -->
-            <article class="case-card">
-                <div class="case-image-wrapper">
-                    <div style="aspect-ratio: 16/10; background: #1c1f2b; border-radius: 12px;"></div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4 style="margin-bottom: 16px;">Технический хаос</h4>
+                    <p style="color: var(--color-text-dim); font-size: 14px;">Сторонние плагины постоянно отваливаются. Лиды теряются в CRM, а вы платите за ошибки софта.</p>
                 </div>
-                <div class="case-content">
-                    <span class="section-label">Сайт эксперта</span>
-                    <h3 class="case-title">Сайт стилиста Ангелины Власовой</h3>
-                    <p class="case-description">Премиальная упаковка личного бренда: образ, услуги, доверие.</p>
-                    <div class="case-info-grid">
-                        <div class="info-item">
-                            <div class="info-label">Задача</div>
-                            <div class="info-value">Показать экспертность и сделать услуги понятными для новой аудитории.</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-label">Решение</div>
-                            <div class="info-value">Спокойная визуальная система, акцент на личности.</div>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <h4 style="margin-bottom: 16px;">Зависимость от платформ</h4>
+                    <p style="color: var(--color-text-dim); font-size: 14px;">Ежемесячные платежи за конструкторы, которые могут заблокировать ваш аккаунт в любой момент.</p>
                 </div>
-            </article>
+                <div class="feature-card">
+                    <h4 style="margin-bottom: 16px;">Слепой дизайн</h4>
+                    <p style="color: var(--color-text-dim); font-size: 14px;">Клиенты считывают шаблоны. Если сайт как у всех — доверие падает, а цена лида растет.</p>
+                </div>
+            </div>
+        </section>
 
-            <!-- Case 2 -->
-            <article class="case-card">
-                <div class="case-image-wrapper">
-                    <div style="aspect-ratio: 16/10; background: #1c1f2b; border-radius: 12px;"></div>
+        <!-- Портфолио (Реальные кейсы) -->
+        <section style="padding: 100px 0;">
+            <h2 style="font-size: 48px; margin-bottom: 100px; text-align: center;">Кейсы с глубокой проработкой</h2>
+            
+            <article class="case-card reveal">
+                <div class="case-image-wrapper" style="background: url('https://ai.vivalook.ru/screenshot.jpg') center/cover; min-height: 400px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
+                    <!-- Здесь будет скриншот ai.vivalook.ru -->
                 </div>
                 <div class="case-content">
                     <span class="section-label">AI-Портал</span>
-                    <h3 class="case-title">Портал по нейросетям</h3>
-                    <p class="case-description">Пространство, где сложные AI-инструменты становятся простыми.</p>
-                    <div class="case-info-grid">
-                        <div class="info-item">
-                            <div class="info-label">Задача</div>
-                            <div class="info-value">Сделать AI-тему понятной для людей без технического бэкграунда.</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-label">Результат</div>
-                            <div class="info-value">Портал воспринимается как современная точка входа в мир ИИ.</div>
-                        </div>
+                    <h3 style="font-size: 36px; margin-bottom: 24px;">Интеллектуальный портал Vivalook</h3>
+                    <div class="case-meta-block">
+                        <div class="info-label">Задача</div>
+                        <div style="font-size: 14px;">Создать экосистему для работы с нейросетями, интуитивно понятную любому пользователю.</div>
                     </div>
+                    <div class="case-meta-block">
+                        <div class="info-label">Решение</div>
+                        <div style="font-size: 14px;">Чистый код на React/JS, интеграция API OpenAI напрямую, кастомный UI без шаблонов.</div>
+                    </div>
+                    <a href="https://ai.vivalook.ru/" target="_blank" style="color: var(--color-accent); text-decoration: none; font-size: 14px; font-weight: bold;">Смотреть проект →</a>
                 </div>
             </article>
-        </div>
-    </section>
+        </section>
+
+        <!-- Блок 3: Смена парадигмы -->
+        <section style="padding: 120px 0; background: #0c0d12; border-radius: 40px; margin: 0 -20px; padding: 100px 40px;">
+            <h2 style="font-size: 48px; text-align: center; margin-bottom: 60px;">Три архитектурных решения</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="info-label">Framer / Tilda</div>
+                    <h4 style="margin: 10px 0;">Конструкторы + Код</h4>
+                    <p style="font-size: 13px; color: var(--color-text-dim);">Быстрый старт от 3 дней. Внутри — кастомная анимация на JS и прямые API-интеграции.</p>
+                </div>
+                <div class="feature-card" style="border: 1px solid var(--color-accent);">
+                    <div class="info-label">React / Next.js</div>
+                    <h4 style="margin: 10px 0;">Полная независимость</h4>
+                    <p style="font-size: 13px; color: var(--color-text-dim);">Абсолютная свобода от подписок. 100% SEO, скорость и защита от любых блокировок.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="info-label">AI Upgrade</div>
+                    <h4 style="margin: 10px 0;">Интеллектуальный апгрейд</h4>
+                    <p style="font-size: 13px; color: var(--color-text-dim);">Внедряю ИИ-агентов на первую линию общения. Сквозная аналитика прямо в Telegram.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 4: Суперсилы -->
+        <section style="padding: 120px 0;">
+            <h2 style="margin-bottom: 60px;">Что под капотом моих проектов?</h2>
+            <div class="tech-powers">
+                <div class="feature-card">⚡️ <b>Прямые API-интеграции</b><br><small>Данные летят в CRM без Albato и Zapier.</small></div>
+                <div class="feature-card">🤖 <b>ИИ-ассистенты</b><br><small>Чат-боты, закрывающие 80% вопросов клиентов.</small></div>
+                <div class="feature-card">=> <b>Умные калькуляторы</b><br><small>Расчет стоимости услуг на лету.</small></div>
+                <div class="feature-card">{ } <b>Vibe-анимация</b><br><small>Кастомный визуал, реагирующий на скролл.</small></div>
+            </div>
+        </section>
+
+        <!-- Блок 5: Оффер -->
+        <section style="padding: 120px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
+            <h2 style="font-size: 48px; margin-bottom: 40px;">Четкие условия и прозрачный процесс</h2>
+            <div style="display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 60px; text-align: left;">
+                <div>⏱️ <b>Сроки</b><br>3 – 7 рабочих дней</div>
+                <div>💵 <b>Стоимость</b><br>от 15 000 рублей</div>
+                <div>📦 <b>Безопасность</b><br>Работа по договору</div>
+            </div>
+            <br>
+            <a href="#" class="btn-pulse" style="font-size: 24px;">Написать инженеру</a>
+        </section>
+    </div>
 
     <script src="js/three-sphere.js"></script>
     <script src="js/observer.js"></script>
