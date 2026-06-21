@@ -2,242 +2,138 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Engineer Portfolio | AI & Clean Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Web Developer | Портфолио</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
 </head>
 <body>
+
     <div class="container">
-        <!-- Блок 1: Главный экран -->
-        <section class="hero-grid">
-            <div class="spotlight"></div>
-            
-            <div class="hero-content" style="position: relative; z-index: 10;">
-                <span class="section-label">AI & Web Architect</span>
-                <h1 class="text-gradient" style="font-size: clamp(42px, 5vw, 72px); line-height: 1.05; margin-bottom: 24px; font-weight: 800; letter-spacing: -2px;">
-                    Разработка сайтов <br>и умных интерфейсов
-                </h1>
-                <p style="color: var(--color-text-dim); font-size: 18px; margin-bottom: 42px; max-width: 520px; line-height: 1.6;">
-                    Создаю адаптивные продающие лендинги и независимые самописные сайты с уникальной архитектурой. Интегрирую ИИ-агентов напрямую через API.
+        <!-- БЛОК 1: ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero-wrapper">
+            <div class="hero-text">
+                <h1 style="font-size: clamp(36px, 5vw, 64px); margin-bottom: 24px;">Создаю сайты нового поколения для бизнеса и экспертов</h1>
+                <p style="color: var(--color-text-dim); font-size: 18px; max-width: 540px;">
+                    От быстрых лендингов до AI-сервисов и веб-приложений с уникальной логикой. 
+                    Современный сайт — это инструмент, который помогает развивать бизнес.
                 </p>
-                <a href="https://t.me/your_handle" class="btn-pulse">Обсудить проект в Telegram</a>
+                <div class="cta-group">
+                    <a href="https://t.me/AnnaEmelyanova27" class="btn btn-tg" target="_blank">Написать в Telegram</a>
+                    <a href="https://vk.com/a.emelyanova82" class="btn btn-vk" target="_blank">Написать ВКонтакте</a>
+                </div>
+                <p style="font-size: 14px; color: var(--color-text-dim);">Отвечу лично и помогу подобрать решение под ваш проект.</p>
             </div>
-
             <div class="hero-visual">
-                <spline-viewer 
-                    url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                    hint="false"
-                ></spline-viewer>
+                <spline-viewer url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"></spline-viewer>
             </div>
         </section>
 
-        <!-- Блок 2: Эволюция (Горизонтальный скролл) -->
-        <section class="evolution-wrapper">
-            <div class="evolution-sticky">
-                <div class="evolution-track" id="evoTrack">
-                    <div class="evo-card" style="width: 600px;">
-                        <h2 style="font-size: 48px; margin-bottom: 24px;">Сегодня сайт — это уже не просто набор страниц</h2>
-                        <p style="color: var(--color-text-dim);">Большинство сайтов выглядят одинаково. Проблема в том, что бизнес меняется быстрее, чем успевают меняться шаблоны.</p>
-                    </div>
-                    <div class="evo-card">
-                        <span class="case-tag">Старый мир</span>
-                        <h3>Шаблонный подход</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px; margin-top: 16px;">Ограничения платформ, десятки плагинов и вечные компромиссы между «хочу» и «можно».</p>
-                    </div>
-                    <div class="evo-card" style="border-color: var(--color-accent);">
-                        <span class="case-tag" style="color: var(--color-accent);">Новая эра</span>
-                        <h3>Современная разработка</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px; margin-top: 16px;">Вайб-кодинг позволяет быстрее создавать интерфейсы, тестировать идеи и внедрять нестандартные решения.</p>
-                    </div>
-                    <div class="evo-card">
-                        <span class="case-tag">Результат</span>
-                        <h3>Гибкость без ограничений</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px; margin-top: 16px;">Быстрый запуск на конструкторе или чистый код — мы выбираем стек под задачу, а не наоборот.</p>
-                    </div>
+        <!-- БЛОК 2: ЧТО Я МОГУ СОЗДАТЬ -->
+        <section id="capabilities" class="reveal">
+            <h2 style="font-size: 36px; margin-bottom: 60px; text-align: center;">Решения под разные задачи и бюджеты</h2>
+            <div class="grid-6">
+                <div class="card">
+                    <h3 style="margin-bottom: 12px; color: var(--color-accent);">Лендинги</h3>
+                    <p style="font-size: 14px; color: var(--color-text-dim);">Для экспертов и онлайн-школ. Понятная структура и адаптация под мобильные.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px; color: var(--color-accent);">Корпоративные сайты</h3>
+                    <p style="font-size: 14px; color: var(--color-text-dim);">Презентация услуг и удобная работа с клиентами для компаний.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px; color: var(--color-accent);">AI-сервисы</h3>
+                    <p style="font-size: 14px; color: var(--color-text-dim);">Личные кабинеты и цифровые продукты с собственной логикой.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px; color: var(--color-accent);">AI-агенты</h3>
+                    <p style="font-size: 14px; color: var(--color-text-dim);">Помощники для сайта, которые отвечают на вопросы и собирают заявки.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px; color: var(--color-accent);">Инструменты</h3>
+                    <p style="font-size: 14px; color: var(--color-text-dim);">Квизы, подборщики услуг и калькуляторы для повышения конверсии.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 12px; color: var(--color-accent);">Автоматизация</h3>
+                    <p style="font-size: 14px; color: var(--color-text-dim);">Интеграции между сайтом, CRM, Telegram и VK.</p>
+                </div>
+            </div>
+            <div class="cta-group" style="justify-content: center; margin-top: 60px;">
+                <a href="https://t.me/AnnaEmelyanova27" class="btn btn-tg">Написать в Telegram</a>
+                <a href="https://vk.com/a.emelyanova82" class="btn btn-vk">Написать ВКонтакте</a>
+            </div>
+        </section>
+
+        <!-- БЛОК 3: ВАРИАНТЫ РАЗРАБОТКИ -->
+        <section id="approaches" class="reveal">
+            <h2 style="font-size: 36px; margin-bottom: 60px;">Три варианта разработки</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div style="color: var(--color-accent); font-weight: 800; margin-bottom: 20px;">Framer / Tilda</div>
+                    <p style="font-size: 14px; line-height: 1.8;">Быстрый старт и удобное управление без программиста в будущем.</p>
+                </div>
+                <div class="card" style="border-color: var(--color-accent);">
+                    <div style="color: var(--color-accent); font-weight: 800; margin-bottom: 20px;">Чистый код</div>
+                    <p style="font-size: 14px; line-height: 1.8;">Полная свобода, уникальный дизайн и независимость от платформ.</p>
+                </div>
+                <div class="card">
+                    <div style="color: var(--color-accent); font-weight: 800; margin-bottom: 20px;">AI & Интеграции</div>
+                    <p style="font-size: 14px; line-height: 1.8;">Усиление вашего текущего сайта умными ассистентами и аналитикой.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Блок Кейсы -->
-        <section style="padding: 100px 0;">
-            <div class="container">
-                <h2 style="font-size: 48px; margin-bottom: 80px; text-align: center;">Кейсы и проекты</h2>
+        <!-- БЛОК 4: ОПЫТ -->
+        <section class="reveal" style="background: rgba(255,255,255,0.02); padding: 80px 40px; border-radius: 40px;">
+            <div style="max-width: 800px;">
+                <h2 style="font-size: 32px; margin-bottom: 24px;">Более 5 лет помогаю бизнесу запускать цифровые проекты</h2>
+                <p style="color: var(--color-text-dim); margin-bottom: 40px;">Смотрю не только на внешний вид, но и на то, как проект будет работать после запуска.</p>
                 
-                <!-- Case 1: AI Clip Maker -->
-                <article class="case-card reveal">
-                    <div class="case-image-container">
-                        <div class="case-image-placeholder">
-                            <!-- Вставьте URL картинки в src ниже -->
-                            <img src="" alt="" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;">
-                        </div>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00FFA3" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Понимание бизнес-процессов</span>
                     </div>
-                    <div class="case-content">
-                        <span class="case-tag">AI-SERVICE</span>
-                        <h3 style="font-size: 32px; margin-bottom: 16px;">AI Clip Maker</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px;">Сервис для автоматической нарезки длинных видео в Reels и Shorts.</p>
-                        
-                        <div class="case-step">
-                            <div class="step-title">Что реализовано</div>
-                            <div style="font-size: 13px; color: var(--color-text-dim);">
-                                — автоматическая расшифровка речи<br>
-                                — создание вертикальных клипов<br>
-                                — личный кабинет пользователя
-                            </div>
-                        </div>
-                        
-                        <a href="ВАША_ССЫЛКА_ЗДЕСЬ" class="project-link" target="_blank">Посмотреть проект →</a>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00FFA3" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Комплексный подход от идеи до запуска</span>
                     </div>
-                </article>
-                        <p style="color: var(--color-text-dim); font-size: 14px;">Сервис для автоматической нарезки длинных видео в Reels и Shorts.</p>
-                        
-                        <div class="case-step">
-                            <div class="step-title">Что реализовано</div>
-                            <div style="font-size: 13px; color: var(--color-text-dim); line-height: 1.8;">
-                                — автоматическая расшифровка речи<br>
-                                — создание вертикальных клипов и субтитров<br>
-                                — личный кабинет пользователя
-                            </div>
-                        </div>
-                        <div class="case-step">
-                            <div class="step-title">Технологии</div>
-                            <div style="font-size: 13px; color: var(--color-accent);">Next.js, OpenAI, FFmpeg, Supabase</div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Case 2: Neon AI -->
-                <article class="case-card reveal">
-                    <div class="case-image-container">
-                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80') center/cover;"></div>
-                    </div>
-                    <div class="case-content">
-                        <span class="case-tag">AI-PLATFORM</span>
-                        <h3 style="font-size: 32px; margin-bottom: 16px;">Neon AI</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px;">Единый интерфейс для генерации контента через ТОП-модели нейросетей.</p>
-                        
-                        <div class="case-step">
-                            <div class="step-title">Что реализовано</div>
-                            <div style="font-size: 13px; color: var(--color-text-dim);">
-                                — генерация изображений и видео<br>
-                                — система баланса и YooKassa
-                            </div>
-                        </div>
-                        <div class="case-step">
-                            <div class="step-title">Технологии</div>
-                            <div style="font-size: 13px; color: var(--color-accent);">Prisma, NextAuth, Replicate API</div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Case 3: Landing Pro -->
-                <article class="case-card reveal">
-                    <div class="case-image-container">
-                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80') center/cover;"></div>
-                    </div>
-                    <div class="case-content">
-                        <span class="case-tag">EXPERT SITE</span>
-                        <h3 style="font-size: 32px; margin-bottom: 16px;">Landing Pro</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px;">Концепция для экспертов, ценящих скорость и чистоту кода.</p>
-                        <div class="case-step">
-                            <div class="step-title">Особенность</div>
-                            <div style="font-size: 13px; color: var(--color-text-dim);">Адаптивный дизайн и формы захвата с интеграцией в Telegram.</div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Case 4: AI Sales Agent -->
-                <article class="case-card reveal">
-                    <div class="case-image-container">
-                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80') center/cover;"></div>
-                    </div>
-                    <div class="case-content">
-                        <span class="case-tag">AI-AUTOMATION</span>
-                        <h3 style="font-size: 32px; margin-bottom: 16px;">AI Sales Agent</h3>
-                        <p style="color: var(--color-text-dim); font-size: 14px;">Умный помощник, превращающий витрину в активный инструмент продаж.</p>
-                        <div class="case-step">
-                            <div class="step-title">Результат</div>
-                            <div style="font-size: 13px; color: var(--color-text-dim);">Квалификация лидов 24/7 и передача данных в CRM без участия человека.</div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Портфолио (Реальные кейсы) -->
-        <section style="padding: 100px 0;">
-            <h2 style="font-size: 48px; margin-bottom: 100px; text-align: center;">Кейсы с глубокой проработкой</h2>
-            
-            <article class="case-card reveal">
-                <div class="case-image-wrapper" style="background: url('https://ai.vivalook.ru/screenshot.jpg') center/cover; min-height: 400px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
-                    <!-- Здесь будет скриншот ai.vivalook.ru -->
-                </div>
-                <div class="case-content">
-                    <span class="section-label">AI-Портал</span>
-                    <h3 style="font-size: 36px; margin-bottom: 24px;">Интеллектуальный портал Vivalook</h3>
-                    <div class="case-meta-block">
-                        <div class="info-label">Задача</div>
-                        <div style="font-size: 14px;">Создать экосистему для работы с нейросетями, интуитивно понятную любому пользователю.</div>
-                    </div>
-                    <div class="case-meta-block">
-                        <div class="info-label">Решение</div>
-                        <div style="font-size: 14px;">Чистый код на React/JS, интеграция API OpenAI напрямую, кастомный UI без шаблонов.</div>
-                    </div>
-                    <a href="https://ai.vivalook.ru/" target="_blank" style="color: var(--color-accent); text-decoration: none; font-size: 14px; font-weight: bold;">Смотреть проект →</a>
-                </div>
-            </article>
-        </section>
-
-        <!-- Блок 3: Смена парадигмы -->
-        <section style="padding: 120px 0; background: #0c0d12; border-radius: 40px; margin: 0 -20px; padding: 100px 40px;">
-            <h2 style="font-size: 48px; text-align: center; margin-bottom: 60px;">Три архитектурных решения</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="info-label">Framer / Tilda</div>
-                    <h4 style="margin: 10px 0;">Конструкторы + Код</h4>
-                    <p style="font-size: 13px; color: var(--color-text-dim);">Быстрый старт от 3 дней. Внутри — кастомная анимация на JS и прямые API-интеграции.</p>
-                </div>
-                <div class="feature-card" style="border: 1px solid var(--color-accent);">
-                    <div class="info-label">React / Next.js</div>
-                    <h4 style="margin: 10px 0;">Полная независимость</h4>
-                    <p style="font-size: 13px; color: var(--color-text-dim);">Абсолютная свобода от подписок. 100% SEO, скорость и защита от любых блокировок.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="info-label">AI Upgrade</div>
-                    <h4 style="margin: 10px 0;">Интеллектуальный апгрейд</h4>
-                    <p style="font-size: 13px; color: var(--color-text-dim);">Внедряю ИИ-агентов на первую линию общения. Сквозная аналитика прямо в Telegram.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Блок 4: Суперсилы -->
-        <section style="padding: 120px 0;">
-            <h2 style="margin-bottom: 60px;">Что под капотом моих проектов?</h2>
-            <div class="tech-powers">
-                <div class="feature-card">⚡️ <b>Прямые API-интеграции</b><br><small>Данные летят в CRM без Albato и Zapier.</small></div>
-                <div class="feature-card">🤖 <b>ИИ-ассистенты</b><br><small>Чат-боты, закрывающие 80% вопросов клиентов.</small></div>
-                <div class="feature-card">=> <b>Умные калькуляторы</b><br><small>Расчет стоимости услуг на лету.</small></div>
-                <div class="feature-card">{ } <b>Vibe-анимация</b><br><small>Кастомный визуал, реагирующий на скролл.</small></div>
+        <!-- БЛОК 5: КЕЙСЫ -->
+        <section id="cases" class="reveal">
+            <h2 style="text-align: center; margin-bottom: 60px;">Некоторые проекты и решения</h2>
+            <div class="grid-6" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <!-- Case Item 1 -->
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div style="height: 200px; background: #1c1f2b;">
+                        <!-- МЕСТО ДЛЯ ФОТО: <img src="URL" style="width:100%; height:100%; object-fit:cover;"> -->
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="margin-bottom: 8px;">Neon AI</h3>
+                        <p style="font-size: 13px; color: var(--color-text-dim); margin-bottom: 20px;">Платформа для работы с нейросетями в одном интерфейсе.</p>
+                        <!-- ССЫЛКА ПОДРОБНЕЕ -->
+                        <a href="#" class="btn btn-tg" style="padding: 10px 20px; font-size: 13px; width: 100%;">Подробнее</a>
+                    </div>
+                </div>
+                <!-- Добавьте остальные 3 кейса аналогично -->
             </div>
         </section>
 
-        <!-- Блок 5: Оффер -->
-        <section style="padding: 120px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
-            <h2 style="font-size: 48px; margin-bottom: 40px;">Четкие условия и прозрачный процесс</h2>
-            <div style="display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 60px; text-align: left;">
-                <div>⏱️ <b>Сроки</b><br>3 – 7 рабочих дней</div>
-                <div>💵 <b>Стоимость</b><br>от 15 000 рублей</div>
-                <div>📦 <b>Безопасность</b><br>Работа по договору</div>
+        <!-- БЛОК 7: ФИНАЛЬНЫЙ CTA -->
+        <section style="text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+            <h2 style="font-size: 48px; margin-bottom: 16px;">Есть идея проекта?</h2>
+            <p style="color: var(--color-text-dim); margin-bottom: 40px;">Расскажите о своей задаче, и я помогу подобрать решение.</p>
+            <div class="cta-group" style="justify-content: center;">
+                <a href="https://t.me/AnnaEmelyanova27" class="btn btn-tg">Написать в Telegram</a>
+                <a href="https://vk.com/a.emelyanova82" class="btn btn-vk">Написать ВКонтакте</a>
             </div>
-            <br>
-            <div class="cta-group" style="justify-content: center; gap: 24px;">
-                <a href="https://t.me/AnnaEmelyanova27" class="btn-pulse" style="font-size: 18px;" target="_blank">Telegram</a>
-                <a href="https://vk.com/your_vk_id" class="btn-pulse btn-vk" style="font-size: 18px;" target="_blank">ВКонтакте</a>
-            </div>
+            <p style="color: var(--color-text-dim); font-size: 14px;">Обычно отвечаю в течение дня.</p>
         </section>
     </div>
 
-    <script src="js/three-sphere.js"></script>
-    <script src="js/observer.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
