@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Engineer Portfolio | AI & Clean Code</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
@@ -32,25 +32,118 @@
             </div>
         </section>
 
-        <!-- Блок 2: Отрезвление -->
-        <section style="padding: 120px 0;">
-            <span class="section-label">Отрезвление</span>
-            <h2 style="font-size: 48px; margin-bottom: 16px;">Почему 90% сайтов в сети работают в минус?</h2>
-            <p style="color: var(--color-text-dim); margin-bottom: 60px;">Бизнес меняется слишком быстро. Шаблонные решения больше не цепляют.</p>
-            
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h4 style="margin-bottom: 16px;">Технический хаос</h4>
-                    <p style="color: var(--color-text-dim); font-size: 14px;">Сторонние плагины постоянно отваливаются. Лиды теряются в CRM, а вы платите за ошибки софта.</p>
+        <!-- Блок 2: Эволюция (Горизонтальный скролл) -->
+        <section class="evolution-wrapper">
+            <div class="evolution-sticky">
+                <div class="evolution-track" id="evoTrack">
+                    <div class="evo-card" style="width: 600px;">
+                        <h2 style="font-size: 48px; margin-bottom: 24px;">Сегодня сайт — это уже не просто набор страниц</h2>
+                        <p style="color: var(--color-text-dim);">Большинство сайтов выглядят одинаково. Проблема в том, что бизнес меняется быстрее, чем успевают меняться шаблоны.</p>
+                    </div>
+                    <div class="evo-card">
+                        <span class="case-tag">Старый мир</span>
+                        <h3>Шаблонный подход</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px; margin-top: 16px;">Ограничения платформ, десятки плагинов и вечные компромиссы между «хочу» и «можно».</p>
+                    </div>
+                    <div class="evo-card" style="border-color: var(--color-accent);">
+                        <span class="case-tag" style="color: var(--color-accent);">Новая эра</span>
+                        <h3>Современная разработка</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px; margin-top: 16px;">Вайб-кодинг позволяет быстрее создавать интерфейсы, тестировать идеи и внедрять нестандартные решения.</p>
+                    </div>
+                    <div class="evo-card">
+                        <span class="case-tag">Результат</span>
+                        <h3>Гибкость без ограничений</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px; margin-top: 16px;">Быстрый запуск на конструкторе или чистый код — мы выбираем стек под задачу, а не наоборот.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h4 style="margin-bottom: 16px;">Зависимость от платформ</h4>
-                    <p style="color: var(--color-text-dim); font-size: 14px;">Ежемесячные платежи за конструкторы, которые могут заблокировать ваш аккаунт в любой момент.</p>
-                </div>
-                <div class="feature-card">
-                    <h4 style="margin-bottom: 16px;">Слепой дизайн</h4>
-                    <p style="color: var(--color-text-dim); font-size: 14px;">Клиенты считывают шаблоны. Если сайт как у всех — доверие падает, а цена лида растет.</p>
-                </div>
+            </div>
+        </section>
+
+        <!-- Блок Кейсы -->
+        <section style="padding: 100px 0;">
+            <div class="container">
+                <h2 style="font-size: 48px; margin-bottom: 80px; text-align: center;">Кейсы и проекты</h2>
+                
+                <!-- Case 1: AI Clip Maker -->
+                <article class="case-card reveal">
+                    <div class="case-image-container">
+                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80') center/cover;"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">AI-SERVICE</span>
+                        <h3 style="font-size: 32px; margin-bottom: 16px;">AI Clip Maker</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px;">Сервис для автоматической нарезки длинных видео в Reels и Shorts.</p>
+                        
+                        <div class="case-step">
+                            <div class="step-title">Что реализовано</div>
+                            <div style="font-size: 13px; color: var(--color-text-dim); line-height: 1.8;">
+                                — автоматическая расшифровка речи<br>
+                                — создание вертикальных клипов и субтитров<br>
+                                — личный кабинет пользователя
+                            </div>
+                        </div>
+                        <div class="case-step">
+                            <div class="step-title">Технологии</div>
+                            <div style="font-size: 13px; color: var(--color-accent);">Next.js, OpenAI, FFmpeg, Supabase</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case 2: Neon AI -->
+                <article class="case-card reveal">
+                    <div class="case-image-container">
+                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80') center/cover;"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">AI-PLATFORM</span>
+                        <h3 style="font-size: 32px; margin-bottom: 16px;">Neon AI</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px;">Единый интерфейс для генерации контента через ТОП-модели нейросетей.</p>
+                        
+                        <div class="case-step">
+                            <div class="step-title">Что реализовано</div>
+                            <div style="font-size: 13px; color: var(--color-text-dim);">
+                                — генерация изображений и видео<br>
+                                — система баланса и YooKassa
+                            </div>
+                        </div>
+                        <div class="case-step">
+                            <div class="step-title">Технологии</div>
+                            <div style="font-size: 13px; color: var(--color-accent);">Prisma, NextAuth, Replicate API</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case 3: Landing Pro -->
+                <article class="case-card reveal">
+                    <div class="case-image-container">
+                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80') center/cover;"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">EXPERT SITE</span>
+                        <h3 style="font-size: 32px; margin-bottom: 16px;">Landing Pro</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px;">Концепция для экспертов, ценящих скорость и чистоту кода.</p>
+                        <div class="case-step">
+                            <div class="step-title">Особенность</div>
+                            <div style="font-size: 13px; color: var(--color-text-dim);">Адаптивный дизайн и формы захвата с интеграцией в Telegram.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case 4: AI Sales Agent -->
+                <article class="case-card reveal">
+                    <div class="case-image-container">
+                        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80') center/cover;"></div>
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">AI-AUTOMATION</span>
+                        <h3 style="font-size: 32px; margin-bottom: 16px;">AI Sales Agent</h3>
+                        <p style="color: var(--color-text-dim); font-size: 14px;">Умный помощник, превращающий витрину в активный инструмент продаж.</p>
+                        <div class="case-step">
+                            <div class="step-title">Результат</div>
+                            <div style="font-size: 13px; color: var(--color-text-dim);">Квалификация лидов 24/7 и передача данных в CRM без участия человека.</div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
