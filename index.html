@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer Portfolio | Clean Code & AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header style="padding: 40px 0; position: absolute; width: 100%; z-index: 10;">
+        <div class="container">
+            <div style="font-weight: 900; font-size: 20px; letter-spacing: -1px;">ENGINEER.LOG</div>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 100vh; display: flex; align-items: center; position: relative;">
+        <div id="three-container" style="position: absolute; right: 0; top: 0; width: 50%; height: 100%;"></div>
+        <div class="container">
+            <div style="max-width: 600px; position: relative; z-index: 2;">
+                <span class="section-label">AI & Web Development</span>
+                <h1 style="font-size: 64px; line-height: 1.1; margin-bottom: 24px;">Разработка сайтов и умных веб-интерфейсов</h1>
+                <p class="case-description" style="font-size: 18px;">От конструкторов до чистого кода. Интегрирую ИИ-агентов без ежемесячных подписок.</p>
+                <a href="#" class="btn-neon">Обсудить проект в Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases" style="padding: 100px 0;">
+        <div class="container">
+            <h2 style="font-size: 48px; margin-bottom: 80px; text-align: center;">Кейсы, где важен смысл</h2>
+            
+            <!-- Case 1 -->
+            <article class="case-card">
+                <div class="case-image-wrapper">
+                    <div style="aspect-ratio: 16/10; background: #1c1f2b; border-radius: 12px;"></div>
+                </div>
+                <div class="case-content">
+                    <span class="section-label">Сайт эксперта</span>
+                    <h3 class="case-title">Сайт стилиста Ангелины Власовой</h3>
+                    <p class="case-description">Премиальная упаковка личного бренда: образ, услуги, доверие.</p>
+                    <div class="case-info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Задача</div>
+                            <div class="info-value">Показать экспертность и сделать услуги понятными для новой аудитории.</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Решение</div>
+                            <div class="info-value">Спокойная визуальная система, акцент на личности.</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Case 2 -->
+            <article class="case-card">
+                <div class="case-image-wrapper">
+                    <div style="aspect-ratio: 16/10; background: #1c1f2b; border-radius: 12px;"></div>
+                </div>
+                <div class="case-content">
+                    <span class="section-label">AI-Портал</span>
+                    <h3 class="case-title">Портал по нейросетям</h3>
+                    <p class="case-description">Пространство, где сложные AI-инструменты становятся простыми.</p>
+                    <div class="case-info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Задача</div>
+                            <div class="info-value">Сделать AI-тему понятной для людей без технического бэкграунда.</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Результат</div>
+                            <div class="info-value">Портал воспринимается как современная точка входа в мир ИИ.</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="js/three-sphere.js"></script>
+    <script src="js/observer.js"></script>
+</body>
+</html>

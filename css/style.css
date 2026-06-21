@@ -1,0 +1,129 @@
+:root {
+    --color-bg: #0A0B0E;
+    --color-surface: #12141C;
+    --color-text-main: #FFFFFF;
+    --color-text-dim: #7E8494;
+    --color-accent: #00FFA3;
+    --color-accent-glow: rgba(0, 255, 163, 0.3);
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --transition-base: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-label {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* Case Block Architecture */
+.case-card {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 120px;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.case-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    transition: var(--transition-base);
+}
+
+.case-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.case-image-wrapper {
+    flex: 1;
+    background: var(--color-surface);
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.case-content {
+    flex: 1;
+}
+
+.case-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.case-description {
+    color: var(--color-text-dim);
+    margin-bottom: 32px;
+}
+
+.case-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 16px;
+    border-left: 2px solid var(--color-accent);
+}
+
+.info-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-size: 14px;
+    color: var(--color-text-dim);
+}
+
+.btn-neon {
+    display: inline-block;
+    padding: 16px 32px;
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 0 15px var(--color-accent-glow);
+}
+
+.btn-neon:hover {
+    background: var(--color-accent);
+    color: #000;
+    box-shadow: 0 0 30px var(--color-accent);
+}
