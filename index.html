@@ -9,26 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <!-- Блок 1: Главный экран (Spline Interactive) -->
+        <!-- Блок 1: Главный экран -->
         <section class="hero-grid">
             <div class="spotlight"></div>
             
-            <div class="hero-content" style="padding: 60px; z-index: 10;">
-                <span class="section-label" style="color: var(--color-accent);">Interactive 3D Experience</span>
-                <h1 class="text-gradient" style="font-size: clamp(40px, 4vw, 64px); line-height: 1.1; margin-bottom: 24px; font-weight: 800;">
+            <div class="hero-content" style="position: relative; z-index: 10;">
+                <span class="section-label">AI & Web Architect</span>
+                <h1 class="text-gradient" style="font-size: clamp(42px, 5vw, 72px); line-height: 1.05; margin-bottom: 24px; font-weight: 800; letter-spacing: -2px;">
                     Разработка сайтов <br>и умных интерфейсов
                 </h1>
-                <p style="color: var(--color-text-dim); font-size: 18px; margin-bottom: 40px; max-width: 480px;">
-                    Создаю иммерсивный опыт, который захватывает внимание. От чистого кода до интеграции ИИ-агентов нового поколения.
+                <p style="color: var(--color-text-dim); font-size: 18px; margin-bottom: 42px; max-width: 520px; line-height: 1.6;">
+                    Создаю адаптивные продающие лендинги и независимые самописные сайты с уникальной архитектурой. Интегрирую ИИ-агентов напрямую через API.
                 </p>
                 <a href="https://t.me/your_handle" class="btn-pulse">Обсудить проект в Telegram</a>
             </div>
 
-            <div class="hero-visual" style="position: relative; height: 100%; width: 100%; min-height: 500px;">
+            <div class="hero-visual">
                 <spline-viewer 
                     url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                    class="w-full h-full"
-                    style="width: 100%; height: 100%;"
+                    hint="false"
                 ></spline-viewer>
             </div>
         </section>

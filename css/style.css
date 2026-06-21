@@ -17,16 +17,45 @@
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr; /* Текст чуть шире, робот компактнее */
     align-items: center;
-    min-height: 85vh;
-    gap: 40px;
-    background: rgba(0, 0, 0, 0.96);
-    border-radius: 32px;
-    margin-top: 40px;
+    min-height: 80vh;
+    gap: 20px;
+    background: #0A0B0E;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Хак для скрытия логотипа Spline */
+spline-viewer {
+    position: absolute;
+    top: 0;
+    right: -10%; /* Сдвигаем чуть вправо для лучшей композиции */
+    width: 110% !important;
+    height: 110% !important;
+}
+
+#spline-canvas-container {
+    /* Фикс для внутренней обертки сплайна */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер для визуальной части */
+.hero-visual {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Убираем "Built with Spline" */
+spline-viewer::part(button) {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
 .spotlight {
