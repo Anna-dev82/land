@@ -11,7 +11,11 @@ window.addEventListener('scroll', () => {
     const progress = -wrapperRect.top / (wrapper.offsetHeight - window.innerHeight);
     
     if (progress >= 0 && progress <= 1) {
-        const maxScroll = track.offsetWidth - window.innerWidth + (window.innerWidth * 0.2);
+        // Вычисляем дистанцию: ширина всего трека минус ширина окна + отступы
+        const trackWidth = track.scrollWidth;
+        const viewWidth = window.innerWidth;
+        const maxScroll = trackWidth - viewWidth + (viewWidth * 0.1); 
+        
         track.style.transform = `translateX(-${progress * maxScroll}px)`;
     }
 });
